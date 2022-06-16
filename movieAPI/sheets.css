@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(36, 36, 36);
+    background-image: url(/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blockBG {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.headerDiv {
+    position: fixed;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.54);
+    backdrop-filter: blur(7px);
+    height: 120px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    z-index: 10;
+}
+
+
+.logoImg {
+    margin-top: 10px;
+    filter: invert();
+    box-shadow: none;
+}
+
+.popHEADER {
+    display: inline;
+    text-align:left;float:left;
+    color: white;
+    backdrop-filter: blur(7px);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 170px;
+    margin-left: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.showMorePop {
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 170px;
+    right: 0px;
+    margin-right: 100px;
+    display: inline;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.mostPop {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 80%;
+    height: 700px;
+}
+
+.mostPop img {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+
+img {
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s;
+}
+
+img:hover {
+    width: 210px;
+    transition: 0.3s;
+}
+
+img:active {
+    width: 190px;
+    transition: 0.3s;
+}
+
+.movieShow {
+    font-family: 'Courier New', Courier, monospace;
+    top: 240px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(31, 31, 31, 0.617);
+    backdrop-filter: blur(7px);
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, 0);
+    z-index: 11;
+    -webkit-box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.75); 
+box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.75);
+    background-repeat: no-repeat;
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.movieShow h1, p {
+    backdrop-filter: blur(7px);
+}
+
+.xBTN {
+    display: inline;
+    backdrop-filter: none;
+    cursor: pointer;
+    width: 0;
+    padding: 4px;
+}
+
+.movieShowBG {
+    width: 1000px;
+    height: 1000px;
+    background-color: black;
+}
